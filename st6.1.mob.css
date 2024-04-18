@@ -1,0 +1,44 @@
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 35px;
+        margin: 0;
+    }
+.verh{
+    display: flex;
+    flex-direction:column ;
+    height: 30vh;
+    width: 90vw;
+    padding-top: 10px;
+    padding-left: 3vw;
+}
+    button{
+        height:7vh;
+    }
+    .grid{
+        width: 90vw;
+        padding-left: 2vw;
+        grid-template-areas:
+    "header"
+    "section-1"
+    "section-2"
+    "section-3"
+    "section-4"
+    "footer";
+        grid-template-rows: 3.5fr 3fr 3fr 3fr 3fr 1fr ;
+    }
+.verhBgr{
+    margin: 2px;
+}
+section, footer,.verhBgr{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+    .s1 ,  .s3{
+        margin-right: 0;
+    }
+    .s2, .s4{
+        margin-left: 0;
+    }
+
+}

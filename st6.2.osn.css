@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    font-size: 30px;
+}
+div{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+"header header"
+    "section footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
+
+}
+header{
+    grid-area: header;
+}
+footer {
+    grid-area: footer;
+}
+section{
+    grid-area: section;
+}
+header,footer,section{
+    background: grey;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px) {
+    div {
+
+        grid-template-areas:
+    "header"
+    "section"
+    "footer";
+        grid-template-rows: 1fr 4fr 1fr;
+    }
+    header,footer,section {
+        width: 100vw;
+        margin: 15px;
+        border-radius: 10px;
+    }
+
+}

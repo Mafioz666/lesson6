@@ -1,0 +1,36 @@
+@media screen and (min-width: 600px) and (max-width: 1200px){
+ .grid{
+     grid-template-areas:
+    "header  header header header"
+    "section-1 section-2 section-3 section-4"
+    "footer footer footer footer";
+     grid-template-columns: 24vw 25vw 25vw 24vw;
+     grid-template-rows: 5fr 7fr 1fr;
+ }
+    section{
+        transform: rotate(270deg);
+        border: 2px solid;
+        justify-content: end;
+        align-items: center;
+        height: 22vw;
+        width: 30vw;
+        margin: 0;
+        padding-right: 2vw;
+        position: relative;
+        top: +10vw;
+        right: +35px;
+    }
+    .verhBgr{
+        padding-right: 10vw;
+        margin-top: 0;
+    }
+    footer{
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+    section{
+        top: +50px;
+        right: +55px;
+    }
+}

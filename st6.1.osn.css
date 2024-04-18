@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+}
+.verh{
+    padding-left:1vw ;
+}
+a{
+    font-size: 20px;
+    color: white;
+    text-decoration: 0;
+}
+button, section,.verhBgr, footer{
+    background: #3696cc;
+    border: 2px solid #3696cc;
+    border-radius: 10px;
+    margin: 2px;
+}
+.verh{
+    height: 5vh;
+}
+.grid{
+    display: grid;
+    height: 92vh;
+    width: 98vw;
+    margin-left: 1vw;
+    color: white;
+    font-size: 30px;
+    grid-template-areas:
+    "header header"
+    "section-1 section-2"
+    "section-3 section-4"
+    "footer footer";
+grid-template-rows: 7fr 4fr 4fr 1fr ;
+}
+.verhBgr{
+    grid-area: header;
+    margin-bottom: 20px;
+}
+footer{
+    grid-area: footer;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s1{
+    grid-area: section-1;
+    margin-right: 10px;
+
+}
+.s2{
+    grid-area: section-2;
+    margin-left: 10px;
+}
+.s3{
+    grid-area: section-3;
+    margin-right: 10px;
+}
+.s4{
+    grid-area: section-4;
+    margin-left: 10px;
+}
+section, .verhBgr{
+    display: flex;
+    justify-content: end;
+}
+section{
+    margin-top: 7px;
+}
